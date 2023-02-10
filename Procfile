@@ -1,1 +1,1 @@
-web: gunicorn 'AdronHomesProject.wsgi'
+web: python manage.py migrate && gunicorn 'AdronHomesProject.wsgi'

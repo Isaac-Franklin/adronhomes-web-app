@@ -1,0 +1,22 @@
+
+{% include 'general.html' %} 
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./images/1.png" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href={% static 'dashboard/assets/adronhomesLogo.png' %}  >
+    <link rel="stylesheet" href="{% static 'agents/css/style.css' %}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Page | Adron Homes</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+</head>
+<body>
+    <main>
+        <h1>Sorry You landed on a dead end page, kindly go back to the <a href={% url 'Dashboard' %}>DASHBOARD</a>  or contact support for clarifications</h1>
+    </main>
+</body>
+</html>
