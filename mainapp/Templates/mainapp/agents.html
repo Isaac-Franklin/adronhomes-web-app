@@ -1,0 +1,344 @@
+
+{% include 'general.html' %} 
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./images/1.png" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href={% static 'dashboard/assets/adronhomesLogo.png' %}  >
+    <link rel="stylesheet" href="{% static 'agents/css/style.css' %}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agents | Adron Homes</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+</head>
+<body>
+    <main>
+        <div>
+            <h5 class='introh3'><a href={% url 'Dashboard' %}>Dashboard</a> > Agents</h5>
+        </div>
+        <div class='crmintro'>
+            <div class='crmintroinA'>
+                <a href= '#'><div class='crmintroin agentsbutton active'>
+                    <img src={% static 'crm/img/agents.png' %} />
+                    <h4>Agents</h4>
+                </div></a>
+                {% comment %} <a href= '#'><div class='crmintroin'>
+                    <img src={% static 'crm/img/activity.png' %} />
+                    <h3>Agent Activity Report</h3>
+                </div></a> {% endcomment %}
+            </div>
+            <div class='addnewagent'>
+                <button>Onboard A New Agent</button>
+            </div>
+        </div>
+        <div class='agentboxoutter'>
+            {% comment %} AGENTS SECTION STARTS HERE {% endcomment %}
+            <div class='agentbox'>
+                <div class='agentnamedata'>
+                    <h4>Full Name: <strong>Akin Alabi</strong></h4>
+                    <button>Delete Agent</button>
+                </div>
+                <div class='agentbio'>
+                    <div>
+                        <img src={% static 'agents/img/agent.png' %} />
+                    </div>
+                    <hr/>
+                    <div class= 'agentbioinner'>
+                        <h5>Joined On: <strong>20-01-2020</strong></h5>
+                        <h5>Location: <strong>Abuja</strong></h5>
+                        <div class='contactagent'>
+                            <h5>Contact Agent: </h5>
+                                <p> Email Address: <a href= '#'><strong>Akin@gmail.com</strong></a></p>
+                                <p> Phone Number: <strong>090123456789</strong></p>
+                        </div>
+                        <h5>Superior Manager: <strong>Olamide Funmi</strong></h5>
+                        <div class='contactmanager'>
+                            <h5>Contact Manager:</h5>
+                                <p> Email Address: <a href= '#'><strong>johnabj@adronhomes.com </strong></a></p>
+                                <p> Phone Number: <strong>+2347 0156 7240</strong></p>
+                        </div>
+                        <div class='soldpropertiesdedtail'>
+                            <h5>Properties Sold: <strong>6</strong></h5>
+                            <p>Location: <strong> Abuja Central </strong></p>
+                            <p>Sold At: <strong> ₦10.5M </strong></p>
+                            <hr/>
+                            <p>Location: <strong> Gwarripa </strong></p>
+                            <p>Sold At: <strong> ₦18.5M </strong></p>
+                            <hr/>
+                            <p>Location: <strong> Gwarripa </strong></p>
+                            <p>Sold At: <strong> ₦18.5M </strong></p>
+                            <hr/>
+                            <p>Location: <strong> Gwarripa </strong></p>
+                            <p>Sold At: <strong> ₦18.5M </strong></p>
+                            <hr/>
+                            <p>Location: <strong> Gwarripa </strong></p>
+                            <p>Sold At: <strong> ₦18.5M </strong></p>
+                            <hr/>
+                            <p>Location: <strong> Gwarripa </strong></p>
+                            <p>Sold At: <strong> ₦18.5M </strong></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            {% comment %} AGENTS SECTION ENDS HERE {% endcomment %}
+            {% comment %} AGENTS SECTION STARTS HERE {% endcomment %}
+            <div class='agentbox'>
+                <div class='agentnamedata'>
+                    <h4>Full Name: <strong>Segun Mide</strong></h4>
+                    <button>Delete Agent</button>
+                </div>
+                <div class='agentbio'>
+                    <div>
+                        <img src={% static 'agents/img/agent.png' %} />
+                    </div>
+                    <hr/>
+                    <div class= 'agentbioinner'>
+                        <h5>Joined On: <strong>20-01-2020</strong></h5>
+                        <h5>Location: <strong>PortHarcourt Office</strong></h5>
+                        <div class='contactagent'>
+                            <h5>Contact Agent: </h5>
+                                <p> Email Address: <a href= '#'><strong>Akin@gmail.com</strong></a></p>
+                                <p> Phone Number: <strong>090123456789</strong></p>
+                        </div>
+                        <h5>Superior Manager: <strong>Jide Baba-Tunda</strong></h5>
+                        <div class='contactmanager'>
+                            <h5>Contact Manager:</h5>
+                                <p> Email Address: <a href= '#'><strong>johnabj@adronhomes.com </strong></a></p>
+                                <p> Phone Number: <strong>+2347 0156 7240</strong></p>
+                        </div>
+                        <div class='soldpropertiesdedtail'>
+                            <h5>Properties Sold: <strong>2</strong></h5>
+                            <p>Location: <strong> Abuja Central </strong></p>
+                            <p>Sold At: <strong> ₦10.5M </strong></p>
+                            <hr/>
+                            <p>Location: <strong> Gwarripa </strong></p>
+                            <p>Sold At: <strong> ₦18.5M </strong></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            {% comment %} AGENTS SECTION ENDS HERE {% endcomment %}
+            {% comment %} AGENTS SECTION STARTS HERE {% endcomment %}
+            <div class='agentbox'>
+                <div class='agentnamedata'>
+                    <h4>Full Name: <strong>Olamide Funmi</strong></h4>
+                    <button>Delete Agent</button>
+                </div>
+                <div class='agentbio'>
+                    <div>
+                        <img src={% static 'agents/img/agent.png' %} />
+                    </div>
+                    <hr/>
+                    <div class= 'agentbioinner'>
+                        <h5>Joined On: <strong>20-01-2020</strong></h5>
+                        <h5>Location: <strong>Abuja</strong></h5>
+                        <div class='contactagent'>
+                            <h5>Contact Agent: </h5>
+                                <p> Email Address: <a href= '#'><strong>Akin@gmail.com</strong></a></p>
+                                <p> Phone Number: <strong>090123456789</strong></p>
+                        </div>
+                        <h5>Superior Manager: <strong>Segun Mide</strong></h5>
+                        <div class='contactmanager'>
+                            <h5>Contact Manager:</h5>
+                                <p> Email Address: <a href= '#'><strong>johnabj@adronhomes.com </strong></a></p>
+                                <p> Phone Number: <strong>+2347 0156 7240</strong></p>
+                        </div>
+                        <div class='soldpropertiesdedtail'>
+                            <h5>Properties Sold: <strong>0</strong></h5>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            {% comment %} AGENTS SECTION ENDS HERE {% endcomment %}
+            {% comment %} AGENTS SECTION STARTS HERE {% endcomment %}
+            <div class='agentbox'>
+                <div class='agentnamedata'>
+                    <h4>Full Name: <strong>Olamide Funmi</strong></h4>
+                    <button>Delete Agent</button>
+                </div>
+                <div class='agentbio'>
+                    <div>
+                        <img src={% static 'agents/img/agent.png' %} />
+                    </div>
+                    <hr/>
+                    <div class= 'agentbioinner'>
+                        <h5>Joined On: <strong>20-01-2020</strong></h5>
+                        <h5>Location: <strong>Abuja</strong></h5>
+                        <div class='contactagent'>
+                            <h5>Contact Agent: </h5>
+                                <p> Email Address: <a href= '#'><strong>Akin@gmail.com</strong></a></p>
+                                <p> Phone Number: <strong>090123456789</strong></p>
+                        </div>
+                        <h5>Superior Manager: <strong>Segun Mide</strong></h5>
+                        <div class='contactmanager'>
+                            <h5>Contact Manager:</h5>
+                                <p> Email Address: <a href= '#'><strong>johnabj@adronhomes.com </strong></a></p>
+                                <p> Phone Number: <strong>+2347 0156 7240</strong></p>
+                        </div>
+                        <div class='soldpropertiesdedtail'>
+                            <h5>Properties Sold: <strong>4</strong></h5>
+                            <p>Location: <strong> Abuja Central </strong></p>
+                            <p>Sold At: <strong> ₦10.5M </strong></p>
+                            <hr/>
+                            <p>Location: <strong> Gwarripa </strong></p>
+                            <p>Sold At: <strong> ₦18.5M </strong></p>
+                            <hr/>
+                            <p>Location: <strong> Gwarripa </strong></p>
+                            <p>Sold At: <strong> ₦18.5M </strong></p>
+                            <hr/>
+                            <p>Location: <strong> Gwarripa </strong></p>
+                            <p>Sold At: <strong> ₦18.5M </strong></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            {% comment %} AGENTS SECTION ENDS HERE {% endcomment %}
+            {% comment %} AGENTS SECTION STARTS HERE {% endcomment %}
+            <div class='agentbox'>
+                <div class='agentnamedata'>
+                    <h4>Full Name: <strong>Samuel Enyi</strong></h4>
+                    <button>Delete Agent</button>
+                </div>
+                <div class='agentbio'>
+                    <div>
+                        <img src={% static 'agents/img/agent.png' %} />
+                    </div>
+                    <hr/>
+                    <div class= 'agentbioinner'>
+                        <h5>Joined On: <strong>20-01-2020</strong></h5>
+                        <h5>Location: <strong>Abia</strong></h5>
+                        <div class='contactagent'>
+                            <h5>Contact Agent: </h5>
+                                <p> Email Address: <a href= '#'><strong>Akin@gmail.com</strong></a></p>
+                                <p> Phone Number: <strong>090123456789</strong></p>
+                        </div>
+                        <h5>Superior Manager: <strong>Segun Mide</strong></h5>
+                        <div class='contactmanager'>
+                            <h5>Contact Manager:</h5>
+                                <p> Email Address: <a href= '#'><strong>johnabj@adronhomes.com </strong></a></p>
+                                <p> Phone Number: <strong>+2347 0156 7240</strong></p>
+                        </div>
+                        <div class='soldpropertiesdedtail'>
+                            <h5>Properties Sold: <strong>8</strong></h5>
+                            <p>Location: <strong> Abuja Central </strong></p>
+                            <p>Sold At: <strong> ₦10.5M </strong></p>
+                            <hr/>
+                            <p>Location: <strong> Gwarripa </strong></p>
+                            <p>Sold At: <strong> ₦18.5M </strong></p>
+                            <hr/>
+                            <p>Location: <strong> Gwarripa </strong></p>
+                            <p>Sold At: <strong> ₦18.5M </strong></p>
+                            <hr/>
+                            <p>Location: <strong> Gwarripa </strong></p>
+                            <p>Sold At: <strong> ₦18.5M </strong></p>
+                            <hr/>
+                            <p>Location: <strong> Gwarripa </strong></p>
+                            <p>Sold At: <strong> ₦18.5M </strong></p>
+                            <hr/>
+                            <p>Location: <strong> Gwarripa </strong></p>
+                            <p>Sold At: <strong> ₦18.5M </strong></p>
+                            <hr/>
+                            <p>Location: <strong> Gwarripa </strong></p>
+                            <p>Sold At: <strong> ₦18.5M </strong></p>
+                            <hr/>
+                            <p>Location: <strong> Gwarripa </strong></p>
+                            <p>Sold At: <strong> ₦18.5M </strong></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            {% comment %} AGENTS SECTION ENDS HERE {% endcomment %}
+        </div>
+
+        {% comment %} AGENT ACTIVITY REPORT STARTS HERE {% endcomment %}
+        <div class='addnewagentsection'>
+            <h5>Kindly Fill Up The Form To A New Agent</h5>
+            <form>
+                {% csrf_token %}
+                <div class="form-outline">
+                    {% comment %} <img class='loginemailbox' src={% static 'useronboard/login/images/email2.png' %} /> {% endcomment %}
+                    <input name='companyname' type="text" id="form12" class="form-control" />
+                    <label class="form-label" for="form12">Agent's Full Name</label>
+                </div><br/>
+                
+                <div class="form-outline">
+                    {% comment %} <img class='loginemailbox' src={% static 'useronboard/login/images/pwd.png' %} /> {% endcomment %}
+                    <input type="password" name="password" id="typePassword" class="form-control" />
+                    <label class="form-label" for="typePassword">Agent's Email Address</label>
+                </div><br/>
+                <div class="form-outline">
+                    {% comment %} <img class='loginemailbox' src={% static 'useronboard/login/images/email2.png' %} /> {% endcomment %}
+                    <input name='companyname' type="text" id="form12" class="form-control" />
+                    <label class="form-label" for="form12">Agent's Assigned Manager</label>
+                </div><br/>
+                
+                <div class="form-outline">
+                    {% comment %} <img class='loginemailbox' src={% static 'useronboard/login/images/pwd.png' %} /> {% endcomment %}
+                    <input type="password" name="password" id="typePassword" class="form-control" />
+                    <label class="form-label" for="typePassword">Agent's Guarantor's Full Name</label>
+                </div><br/>
+                <div class="form-outline">
+                    {% comment %} <img class='loginemailbox' src={% static 'useronboard/login/images/email2.png' %} /> {% endcomment %}
+                    <input name='companyname' type="text" id="form12" class="form-control" />
+                    <label class="form-label" for="form12">Agent's Guarantor's Address</label>
+                </div><br/>
+                
+                <div class="form-outline">
+                    {% comment %} <img class='loginemailbox' src={% static 'useronboard/login/images/pwd.png' %} /> {% endcomment %}
+                    <input type="password" name="password" id="typePassword" class="form-control" />
+                    <label class="form-label" for="typePassword">Agent's Location</label>
+                </div><br/>
+                <button>Register Agent</button>
+            </form>
+        </div>
+
+        {% comment %} AGENT ACTIVITY REPORT ENDS HERE {% endcomment %}
+    </main>
+    
+     <!-- FOOTER STARTS HERE -->
+     <footer>
+        <div>
+            <div>
+                <img src={% static 'dashboard/assets/adronhomesLogo.png' %} />
+            </div><br/>
+            <div class="footerintro">
+                <h3>About Adron Homes</h3>
+                <p>We Are Daily Driven To Keep Our Promise Providing Affordable Housing Products With A Singular Mission To Exceed Expectations</p>
+            </div>
+        </div>
+        <div class="fotterinner">
+            <div class="contactnote">
+                <h3>Contact Us</h3><br/>
+                <p>For complaints or enquiries, you can reach us via any of the numbers below or visit our head office </p>
+            </div>
+            <div>
+                <div class="contactadronhomes">
+                <img src={% static 'dashboard/assets/office.png' %} />
+                <p>75B Adeyemo Akapo, Omoele Phase 1. Ikeja, Lagos State</p>
+                </div>
+                <div class="contactadronhomes">
+                    <img src={% static 'dashboard/assets/call2.png' %} />
+                    <p>+234 905 8590 355</p>
+                </div>
+                <div class="contactadronhomes">
+                    <img src={% static 'dashboard/assets//mail.png' %} />
+                    <p>clientservice@adronhomespropertities.com</p>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+    <!-- FOOTER ENDS HERE -->
+    <script src= {% static 'agents/js/main.js' %}></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js" ></script>
+</body>
+</html>

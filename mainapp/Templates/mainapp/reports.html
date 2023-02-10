@@ -1,0 +1,72 @@
+
+{% include 'general.html' %} 
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./images/1.png" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href={% static 'dashboard/assets/adronhomesLogo.png' %}  >
+    <link rel="stylesheet" href="{% static 'reports/css/style.css' %}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports | Adron Homes</title>
+</head>
+<body>
+    <main>
+        <div>
+            <h3 class='introh3'><a href={% url 'Dashboard' %}>Dashboard</a> > Reports</h3>
+        </div>
+        <div class='section'>
+            <h3>Sold Apartments</h3>
+        </div>
+        <div class='section'>
+            <h3>Sold Lands</h3>
+        </div>
+        <div class='section'>
+            <h3>Pending Transactions</h3>
+        </div>
+        <div class='section'>
+            <h3>Land(s) With Cases</h3>
+        </div>
+        <div class='section'>
+            <h3>Yet To Be Acquired Apartments</h3>
+        </div>
+    </main>
+</body>
+<!-- FOOTER STARTS HERE -->
+<footer>
+    <div>
+        <div>
+            <img src={% static 'dashboard/assets/adronhomesLogo.png' %} />
+        </div><br/>
+        <div class="footerintro">
+            <h3>About Adron Homes</h3>
+            <p>We Are Daily Driven To Keep Our Promise Providing Affordable Housing Products With A Singular Mission To Exceed Expectations</p>
+        </div>
+    </div>
+    <div class="fotterinner">
+        <div class="contactnote">
+            <h3>Contact Us</h3><br/>
+            <p>For complaints or enquiries, you can reach us via any of the numbers below or visit our head office</p>
+        </div>
+        <div>
+            <div class="contactadronhomes">
+            <img src={% static 'dashboard/assets/office.png' %} />
+            <p>75B Adeyemo Akapo, Omoele Phase 1. Ikeja, Lagos State</p>
+            </div>
+            <div class="contactadronhomes">
+                <img src={% static 'dashboard/assets/call2.png' %} />
+                <p>+234 905 8590 355</p>
+            </div>
+            <div class="contactadronhomes">
+                <img src={% static 'dashboard/assets//mail.png' %} />
+                <p>clientservice@adronhomespropertities.com</p>
+            </div>
+        </div>
+        
+    </div>
+</footer>
+<!-- FOOTER ENDS HERE -->
+</html>

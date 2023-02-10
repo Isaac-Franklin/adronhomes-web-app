@@ -1,0 +1,298 @@
+main{
+    width: 90%;
+    /* background-color: red; */
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+main h3 a{
+    text-decoration: none;
+    color: #5b7d05;
+}
+
+.introh3{
+    margin-bottom: 20px;
+}
+
+.crmintro{
+    background-color: #5b7d0541;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.crmintro button{
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+
+}
+.crmintro button:hover{
+    /* color: #5b7d05; */
+    background-color: #5c702a2f;
+}
+
+.crmintroinA{
+    display: flex;
+}
+
+.crmintro img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.crmintroin{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.crmintroinA a{
+    text-decoration: none;
+}
+
+.crmintroin h3{
+    color: black
+}
+
+.crmintroin:hover{
+    background-color: #5c702a2f;
+}
+
+.manager img{
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.manager{
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    margin-right: 20px;
+    border: 2px solid #5b7d05;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    overflow-x: scroll;
+}
+.manager::-webkit-scrollbar{
+    display: none;
+}
+
+.manager:hover{
+    border: 2px solid #b7ff00;
+    background-color: rgb(228, 228, 228);
+}
+.manageractive{
+    border: 2px solid #b7ff00;
+    background-color: rgb(228, 228, 228);
+}
+
+
+.managername{
+    display: flex;
+    height: 26px;
+    margin-bottom: 5px;
+    width: 120%;
+    /* background-color: red; */
+    justify-content: space-between;
+}
+
+.managername h3{
+    width: 200px;
+    /* background-color: red; */
+    /* overflow-x: scroll; */
+}
+
+.managername h3::-webkit-scrollbar{
+    display: none;
+}
+
+.managerout{
+    width: 100%;
+}
+
+.managername p{
+    margin-left: -45px;
+    /* width: 100px; */
+    align-items: center;
+    font-weight: bold;
+    background-color: #5b7d0549;
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(66, 66, 66);
+}
+
+.manager span{
+    color:rgb(66, 66, 66);
+    background-color: white;
+    padding: 1px;
+    border-radius: 5px;
+    background-color: #5b7d0549;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) */
+}
+
+.mainmanagerwall{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    width: 100%;
+    /* align-items: center; */
+    margin: auto;
+    /* background-color: red; */
+    justify-content: space-between;
+}
+
+.managerDetails{
+    padding: 20px;
+    margin: 20px;
+    margin-right: 0px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+
+.managerDetails H1{
+    margin-bottom: 10px;
+}
+
+.managerDetailsin1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactmanager{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactmanager img{
+    width: 30px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.contactmanager img:hover{
+    transform: scale(1.2);
+}
+
+main strong{
+    color: #5b7d05;
+}
+
+.manageractivity{
+    background-color: #5b7d0541;
+    padding: 10px;
+    border-radius: 5px;
+    /* margin-top: 200px; */
+
+}
+
+.manageractivity li{
+    padding-bottom: 15px;
+}
+.manageractivity li:hover{
+    padding-bottom: 0px;
+    border-bottom: 2px solid black;
+}
+.active{
+    /* padding-bottom: -10px; */
+    border-bottom: 2px solid black;
+}
+
+.agentslist{
+    display: flex;
+    /* display: grid; */
+    /* grid-template-columns: 70% 25%; */
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    background-color: aliceblue;
+    padding: 5px;
+    /* background-color: red; */
+}
+
+.managerintro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.managerintro button{
+    background-color:#5b7d05;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1.1rem;
+}
+.agentslist button{
+    background-color:#5b7d05;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.listofagents{
+    display: none;
+}
+.soldapartments{
+    display: none;
+}
+
+@media only screen and (max-width: 950px){
+    main{
+        padding-top: 90px;
+    }
+
+    .mainmanagerwall{
+        display: inline;
+        grid-template-columns: 100%;
+        width: 100%;
+        /* align-items: center; */
+        margin: auto;
+        /* background-color: red; */
+        justify-content: space-between;
+    }
+
+    .managerDetails{
+        padding: 20px;
+        margin: 0px;
+        margin-right: 0px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+    }
+
+    .agentslist{
+        display: inline;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5px;
+        /* background-color: aliceblue; */
+        padding: 5px;
+        background-color: transparent;
+        /* border: 2px solid black; */
+    }
+}

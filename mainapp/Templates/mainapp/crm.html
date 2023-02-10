@@ -1,0 +1,293 @@
+
+{% include 'general.html' %} 
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./images/1.png" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href={% static 'dashboard/assets/adronhomesLogo.png' %}  >
+    <link rel="stylesheet" href="{% static 'crm/css/style.css' %}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM | Adron Homes</title>
+</head>
+<body>
+    <main>
+        <div>
+            <h3 class='introh3'><a href={% url 'Dashboard' %}>Dashboard</a> > Customer Relationship Managers(CRM)</h3>
+        </div>
+        <div class='crmintro'>
+            <div class='crmintroinA'>
+                <a href= '#' ><div class='crmintroin'>
+                    <img src={% static 'crm/img/manager.png' %} />
+                    <h3>Managers</h3>
+                </div></a>
+                {% comment %} <a href= '#'><div class='crmintroin'>
+                    <img src={% static 'crm/img/agents.png' %} />
+                    <h3>Agents</h3>
+                </div></a>
+                <a href= '#'><div class='crmintroin'>
+                    <img src={% static 'crm/img/activity.png' %} />
+                    <h3>Agent Activity Report</h3>
+                </div></a> {% endcomment %}
+            </div>
+            <div>
+                <button>Onboard A New Manager</button>
+            </div>
+        </div>
+        <div class='mainmanagerwall'>
+            <div class='managerout'>
+                {% comment %} MANAGER MINOR DETAIL STARTS HERE {% endcomment %}
+                <div class='manager manager1'>
+                    <div>
+                        <img src={% static 'crm/img/man.jpg' %} />
+                    </div>
+                    <div>
+                        <div class='managername'>
+                            <h3>Olamide Funmi</h3>
+                            <p>Abuja Office</p>
+                        </div>
+                        <div>
+                            <p>Allocated Agents: <span>12</span><p>
+                            <p># Of Sold Apartments: <span>07</span></p>
+                        </div>
+                    </div>
+                </div>
+                {% comment %} MANAGER MINOR DETAIL ENDS HERE {% endcomment %}
+                {% comment %} MANAGER MINOR DETAIL STARTS HERE {% endcomment %}
+                <div class='manager manager2'>
+                    <div>
+                        <img src={% static 'crm/img/man1.jpg' %} />
+                    </div>
+                    <div>
+                        <div class='managername'>
+                            <h3>Gerald Bamilola</h3>
+                            <p>Kaduna Office</p>
+                        </div>
+                        <div>
+                            <p>Allocated Agents: <span>5</span><p>
+                            <p># Of Sold Apartments: <span>7</span></p>
+                        </div>
+                    </div>
+                </div>
+                {% comment %} MANAGER MINOR DETAIL ENDS HERE {% endcomment %}
+                
+                {% comment %} MANAGER MINOR DETAIL STARTS HERE {% endcomment %}
+                    <div class='manager manager3'>
+                        <div>
+                            <img src={% static 'crm/img/man3.jpg' %} />
+                        </div>
+                        <div>
+                            <div class='managername'>
+                                <h3>Hasam Lafiya</h3>
+                                <p>Borno Office</p>
+                            </div>
+                            <div>
+                                <p>Allocated Agents: <span>2</span><p>
+                                <p># Of Sold Apartments: <span>2</span></p>
+                            </div>
+                        </div>
+                    </div>
+                {% comment %} MANAGER MINOR DETAIL ENDS HERE {% endcomment %}
+                {% comment %} MANAGER MINOR DETAIL STARTS HERE {% endcomment %}
+                    <div class='manager manager4'>
+                        <div>
+                            <img src={% static 'crm/img/man2.jpg' %} />
+                        </div>
+                        <div>
+                            <div class='managername'>
+                                <h3>Jide Baba-Tunda</h3>
+                                <p>PortHarcourt Office</p>
+                            </div>
+                            <div>
+                                <p>Allocated Agents: <span>12</span><p>
+                                <p># Of Sold Apartments: <span>07</span></p>
+                            </div>
+                        </div>
+                    </div>
+                {% comment %} MANAGER MINOR DETAIL ENDS HERE {% endcomment %}
+                </div>
+                {% comment %} MANAGER BIG SECTION DETAILS DISPLAY SECTION STARTS HERE {% endcomment %}
+                <div class='managerDetails'>
+                    <div class='managerintro'>
+                        <h1 class='managernamemain'>Olamide Funmi</h1>
+                        <button>Delete Manager Profile</button>
+                    </div><br/>
+                    <div class='managerDetailsin1'>
+                        <h3>Office Location: <strong>Abuja</strong></h3>
+                        <p>Onboarded On <strong>25th June, 2020</strong></p>
+                    </div>
+                    <br/>
+                    <br/>
+                    <hr/>
+                    <br/>
+                    <br/>
+                    <div>
+                        <div class='contactmanager'>
+                            <h3>Phone Number: <strong>+2347 0156 7240</strong></h3><br/>
+                            <div>
+                                <img src={% static 'crm/img/call.png' %} />
+                            </div>
+                        </div><br/>
+                        <div class='contactmanager'>
+                            <h3>Email Address: <strong>johnabj@adronhomes.com</strong></h3>
+                            <div>
+                                <img src={% static 'crm/img/chat.png' %} />
+                            </div>
+                        </div>
+                    </div>
+                    <br/>
+                    <hr/>
+                    <br/>
+                    <div>
+                        <h2># Of Allocated Agents: <strong>12</strong></h2><br/>
+                        <h2># Of Sold Apartments: <strong>07</strong></h2>
+                    </div>
+                    <br/>
+                    <hr/>
+                    <br/>
+                    <div class='manageractivity'>
+                        <ul>
+                            <li class='allocatedagents'>Allocated Agents</li>
+                            {% comment %} <li>Allocated Accounts</li> {% endcomment %}
+                            <li class='propertiesSold'>Properties Sold</li>
+                        </ul><br/>
+                        <div class='listofagents'>
+                            <div class='agentslist'>
+                                <p>Segun Mide</p>
+                                <p><strong>johnabj@adronhomes.com</strong><p>
+                                <p><strong>+2347 0156 7240</strong><p>
+                                    <button>Delete Agent</button>
+                            </div>
+                            <div class='agentslist'>
+                                <p>Matthew Ketu</p>
+                                <p><strong>johnabj@adronhomes.com</strong><p>
+                                <p><strong>+2347 0156 7240</strong><p>
+                                    <button>Delete Agent</button>
+                            </div>
+                            <div class='agentslist'>
+                                <p>Samuel Enyi</p>
+                                <p><strong>johnabj@adronhomes.com</strong><p>
+                                <p><strong>+2347 0156 7240</strong><p>
+                                    <button>Delete Agent</button>
+                            </div>
+                            <div class='agentslist'>
+                                <p>Akin Alabi</p>
+                                <p><strong>johnabj@adronhomes.com</strong><p>
+                                <p><strong>+2347 0156 7240</strong><p>
+                                    <button>Delete Agent</button>
+                            </div>
+                            <div class='agentslist'>
+                                <p>Segun Mide</p>
+                                <p><strong>johnabj@adronhomes.com</strong><p>
+                                <p><strong>+2347 0156 7240</strong><p>
+                                    <button>Delete Agent</button>
+                            </div>
+                            <div class='agentslist'>
+                                <p>Matthew Ketu</p>
+                                <p><strong>johnabj@adronhomes.com</strong><p>
+                                <p><strong>+2347 0156 7240</strong><p>
+                                    <button>Delete Agent</button>
+                            </div>
+                            <div class='agentslist'>
+                                <p>Samuel Enyi</p>
+                                <p><strong>johnabj@adronhomes.com</strong><p>
+                                <p><strong>+2347 0156 7240</strong><p>
+                                    <button>Delete Agent</button>
+                            </div>
+                            <div class='agentslist'>
+                                <p>Akin Alabi</p>
+                                <p><strong>johnabj@adronhomes.com</strong><p>
+                                <p><strong>+2347 0156 7240</strong><p>
+                                    <button>Delete Agent</button>
+                            </div>
+                        </div>
+                        <div class='soldapartments'>
+                            <div class='agentslist'>
+                                <p>Sold By: Agent<strong> Akin Alabi</strong></p>-  
+                                <p>Property: <strong>The Next RealEstate</strong><p>-
+                                <p>Sold At: <strong>21,000,000</strong><p>-
+                                <p>Sold On: <strong>02-02-2020</strong><p><br/><br/>
+                            </div>
+                            <div class='agentslist'>
+                                <p>Sold By: Agent<strong> Akin Alabi</strong></p>-  
+                                <p>Property: <strong>The Next RealEstate</strong><p>-
+                                <p>Sold At: <strong>21,000,000</strong><p>-
+                                <p>Sold On: <strong>02-02-2020</strong><p><br/><br/>
+                            </div>
+                            <div class='agentslist'>
+                                <p>Sold By: Agent<strong> Akin Alabi</strong></p>-  
+                                <p>Property: <strong>The Next RealEstate</strong><p>-
+                                <p>Sold At: <strong>21,000,000</strong><p>-
+                                <p>Sold On: <strong>02-02-2020</strong><p><br/><br/>
+                            </div>
+                            <div class='agentslist'>
+                                <p>Sold By: Agent<strong> Akin Alabi</strong></p>-  
+                                <p>Property: <strong>The Next RealEstate</strong><p>-
+                                <p>Sold At: <strong>21,000,000</strong><p>-
+                                <p>Sold On: <strong>02-02-2020</strong><p><br/><br/>
+                            </div>
+                            <div class='agentslist'>
+                                <p>Sold By: Agent<strong> Akin Alabi</strong></p>-  
+                                <p>Property: <strong>The Next RealEstate</strong><p>-
+                                <p>Sold At: <strong>21,000,000</strong><p>-
+                                <p>Sold On: <strong>02-02-2020</strong><p><br/><br/>
+                            </div>
+                            <div class='agentslist'>
+                                <p>Sold By: Agent<strong> Akin Alabi</strong></p>-  
+                                <p>Property: <strong>The Next RealEstate</strong><p>-
+                                <p>Sold At: <strong>21,000,000</strong><p>-
+                                <p>Sold On: <strong>02-02-2020</strong><p><br/><br/>
+                            </div>
+                            <div class='agentslist'>
+                                <p>Sold By: Agent<strong> Akin Alabi</strong></p>-  
+                                <p>Property: <strong>The Next RealEstate</strong><p>-
+                                <p>Sold At: <strong>21,000,000</strong><p>-
+                                <p>Sold On: <strong>02-02-2020</strong><p><br/><br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% comment %} MANAGER BIG SECTION DETAILS DISPLAY SECTION ENDS HERE {% endcomment %}
+        </div>
+    </main>
+
+     <!-- FOOTER STARTS HERE -->
+     <footer>
+        <div>
+            <div>
+                <img src={% static 'dashboard/assets/adronhomesLogo.png' %} />
+            </div><br/>
+            <div class="footerintro">
+                <h3>About Adron Homes</h3>
+                <p>We Are Daily Driven To Keep Our Promise Providing Affordable Housing Products With A Singular Mission To Exceed Expectations</p>
+            </div>
+        </div>
+        <div class="fotterinner">
+            <div class="contactnote">
+                <h3>Contact Us</h3><br/>
+                <p>For complaints or enquiries, you can reach us via any of the numbers below or visit our head office </p>
+            </div>
+            <div>
+                <div class="contactadronhomes">
+                <img src={% static 'dashboard/assets/office.png' %} />
+                <p>75B Adeyemo Akapo, Omoele Phase 1. Ikeja, Lagos State</p>
+                </div>
+                <div class="contactadronhomes">
+                    <img src={% static 'dashboard/assets/call2.png' %} />
+                    <p>+234 905 8590 355</p>
+                </div>
+                <div class="contactadronhomes">
+                    <img src={% static 'dashboard/assets//mail.png' %} />
+                    <p>clientservice@adronhomespropertities.com</p>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+    <!-- FOOTER ENDS HERE -->
+    <script src= {% static 'crm/js/main.js' %}></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+{% load static %} 
+{% block content %}
+<body>
+    <div>
+        <nav>
+            <!-- <div class="navlist"> -->
+            <div class="logo">
+                <img src={% static 'dashboard/assets/adronhomesLogo.png' %} />
+            </div>
+            <div class="listmenu">
+                <ul>
+                    <a href={% url 'Dashboard' %}><li>Dashboard</li></a>
+                    <a href={% url 'Properties' %}><li>Properties</li></a>
+                    <a href={% url 'CRM' %}><li title='Customer Relationship Management'>CRM</li></a>
+                    <a href={% url 'Agents' %}><li>Agents</li></a>
+                    <a href={% url 'Reports' %}><li>Reports</li></a>
+                    <a href={% url 'SalesTeam' %}><li>Sales Team</li></a>
+                    <a href={% url 'Transactions' %}><li>Transactions</li></a>
+                </ul>
+            </div>
+            <!-- </div> -->
+            
+            <div class="navimages">
+                <img class="navimages1" src={% static 'dashboard/assets/notification2.png' %} />
+                <img class="navimages2" src={% static 'dashboard/assets/man.jpg' %} />
+                <div class="navimagesinner">
+                    <p>Ololade Rose</p>
+                    <img class="downarrow" src={% static 'dashboard/assets/down-arrow2.png' %} />
+                    <img class="uparrow" src={% static 'dashboard/assets/up-arrow.png' %} />
+                </div>
+                <div class='dropdownnavtab'>
+                    {% comment %} <ul> {% endcomment %}
+                        <p>Visit Your Profile</p>
+                        <p>Settings</p>
+                        <p>Logout</p>
+                    {% comment %} </ul> {% endcomment %}
+                </div>
+            </div>
+            <div class="openandclosenav">
+                <img class="navopen"  src={% static 'dashboard/assets/opennav.png' %} />
+                <img class="navclose" src={% static 'dashboard/assets/closenav.png' %} />
+            </div>
+        </nav>
+    </div>
+     {% comment %} <!-- FOOTER STARTS HERE -->
+     <footer>
+        <div>
+            <div>
+                <img src={% static 'dashboard/assets/adronhomesLogo.png' %} />
+            </div><br/>
+            <div class="footerintro">
+                <h3>About Adron Homes</h3>
+                <p>We Are Daily Driven To Keep Our Promise Providing Affordable Housing Products With A Singular Mission To Exceed Expectations</p>
+            </div>
+        </div>
+        <div class="fotterinner">
+            <div class="contactnote">
+                <h3>Contact Us</h3><br/>
+                <p>For complaints or enquiries, you can reach us via any of the numbers below or visit our head office at >>></p>
+            </div>
+            <div>
+                <div class="contactadronhomes">
+                <img src={% static 'dashboard/assets/office.png' %} />
+                <p>75B Adeyemo Akapo, Omoele Phase 1. Ikeja, Lagos State</p>
+                </div>
+                <div class="contactadronhomes">
+                    <img src={% static 'dashboard/assets/call2.png' %} />
+                    <p>+234 905 8590 355</p>
+                </div>
+                <div class="contactadronhomes">
+                    <img src={% static 'dashboard/assets//mail.png' %} />
+                    <p>clientservice@adronhomespropertities.com</p>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+    <!-- FOOTER ENDS HERE --> {% endcomment %}
+</body>
+
+{% endblock content %}

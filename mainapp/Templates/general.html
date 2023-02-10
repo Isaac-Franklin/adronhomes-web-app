@@ -1,0 +1,22 @@
+<!-- @format -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/x-icon" href={% static 'dashboard/assets/adronhomesLogo.png' %}  >
+		<link rel="stylesheet" href="{% static './dashboard/css/general.css' %}" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+	</head>
+	<body>
+		{% include 'navbar.html' %} {% block content %}{% endblock content %}
+        <script src="{% static './dashboard/js/general.js' %}"></script>
+		<script defer src="{% static './dashboard/js/main.js' %}"></script>
+		<script defer src="{% static './dashboard/js/main2.js' %}"></script>
+	</body>
+</html>
+
+

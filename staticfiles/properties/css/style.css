@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.propertystatucsection{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 450px;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.propertystatucsectionoutter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.propertystatucsectionoutter button{
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+.propertystatucsectionoutter button:hover{
+    background-color: #5c702a2f;
+}
+
+
+.statusin{
+    margin-left: 5px;
+}
+
+.statusin a{
+    text-decoration: none;
+}
+
+.statusin span{
+    margin-right: 10px;
+    background-color: blue;
+    border-radius: 30px;
+    color: white;
+    padding: 1px 3px;
+}
+
+main{
+    width: 90%;
+    /* background-color: red; */
+    margin: auto;
+    margin-top: 10px;
+}
+
+main h3 a{
+    text-decoration: none;
+    color: #5b7d05;
+}
+
+.introh3{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.propertiesdatasectionmainimg img{
+    /* width: 50%;
+    height: 50%; */
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    /* object-fit: cover; */
+}
+
+.propertiesdatasectionmainimg {
+    height: 300px;
+    width: 500px;
+    margin-right: 5px;
+    overflow: hidden;
+}
+
+.propertiesdatasectionmainimginner img{
+    width: 100px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.bodyimg{
+    width: 100%;
+    height: 100%;
+}
+
+.propertiesdatasectionmainimginner{
+    display: flex;
+    overflow-x: scroll;
+    width: 500px;
+    margin-right: 10px;
+}
+
+.propertiesdatasection{
+    display: flex;
+}
+
+.propertiesdetail{
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+    /* background-color: red; */
+}
+
+.propertiesdetail img{
+    width: 20px;
+    height: 20px;
+}
+.propertiesdetail p{
+    font-size: 1.2rem;
+}
+
+.propertiesdetaillocationinner{
+    display: flex;
+}
+
+.propertiesdetaillocation{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+
+.propertiesindetailssection{
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(170, 170, 170, 0.19)
+}
+
+.propertiesindetailssectioninner{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    opacity: 1;
+}
+
+
+.bodyimg{
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+@media only screen and (max-width: 950px){
+    
+    main{
+
+        width: 90%;
+        /* background-color: red; */
+        margin: auto;
+        padding-top: 100px;
+    }
+    
+    .propertystatucsection{
+        display: flex;
+        align-items: center;
+        padding: 5px 10px;
+        border: 1px solid grey;
+        border-radius: 5px;
+        width: 100%;
+        font-size: .7rem;
+        margin-bottom: 10px;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    .propertystatucsectionoutter{
+        display: inline;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .propertiesdatasection{
+        display: inline;
+    }
+    .propertiesdatasectionmainimg {
+        height: 300px;
+        width: 100%;
+        margin-right: 5px;
+        overflow: hidden;
+    }
+    
+    .propertiesdatasectionmainimginner img{
+        width: 80px;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+    
+    .bodyimg{
+        width: 100%;
+        height: 100%;
+    }
+
+    .propertiesdatasectionmainimginner{
+        display: flex;
+        overflow-x: scroll;
+        width: 100%;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+
+        
+    .propertiesdetaillocationinner{
+        display: flex;
+    }
+
+    .propertiesdetaillocation{
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
+        margin-bottom: 5px;
+        justify-content: space-between;
+    }
+    
+    
+
+}

@@ -1,0 +1,205 @@
+
+{% include 'general.html' %} 
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./images/1.png" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href={% static 'dashboard/assets/adronhomesLogo.png' %}  >
+    <link rel="stylesheet" href="{% static 'transactions/css/style.css' %}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions | Adron Homes</title>
+</head>
+<body>
+    <main>
+        <div>
+            <h3 class='introh3'><a href={% url 'Dashboard' %}>Dashboard</a> > Transactions</h3>
+        </div>
+        
+        {% comment %} Graph one details starts here {% endcomment %}
+        <div class='revenueoutter2'>
+            <div class='revenueoutter2A'>
+                <div class="revenueoutter">
+                    <div class="money revenue">
+                        <div>
+                            <img src={% static 'dashboard/assets/naira.png' %}/>
+                        </div>
+                        <div>
+                            <h2>₦22M</h2>
+                            <p>Total Revenue</p>
+                        </div>
+                    </div>
+                    <div class="money revenue">
+                        <div>
+                            <img src={% static 'dashboard/assets/income.png' %} />
+                        </div>
+                        <div>
+                            <h2>₦15M</h2>
+                            <p>Total Income</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- GRAPH STARTS HERE -->
+                <div class="graphsection">
+                    <div>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <button>Edit Data</button>
+                </div>
+            </div>
+            <div class="revenueoutter2B">
+                <p>Total Revenue For 2020 : <strong>22 Million Naira</strong></p><br/>
+                <p>Total Income For 2020 : <strong>15 Million Naira</strong></p><br/>
+                <p>Taxes & Other Management Expenses For 2020 : <strong>7 Million Naira</strong></p><br/><br/>
+                <div>
+                    <p>January : <strong>100 Million Naira</strong></p><br/>
+                    <p>February : <strong>98 Million Naira</strong></p><br/>
+                    <p>March : <strong>120 Million Naira</strong></p><br/>
+                    <p>April : <strong>85 Million Naira</strong></p><br/>
+                    <p>May : <strong>72 Million Naira</strong></p><br/>
+                    <p>June : <strong>103 Million Naira</strong></p><br/>
+                    <p>July : <strong>100 Million Naira</strong></p><br/>
+                    <p>August : <strong>98 Million Naira</strong></p><br/>
+                    <p>September : <strong>120 Million Naira</strong></p><br/>
+                    <p>October : <strong>85 Million Naira</strong></p><br/>
+                    <p>November : <strong>72 Million Naira</strong></p><br/>
+                    <p>December : <strong>103 Million Naira</strong></p><br/>
+                </div>
+            </div>
+        </div>
+        {% comment %} Graph one details ends here {% endcomment %}
+
+
+        {% comment %} graph 2 details on sales starts here {% endcomment %}
+        <div class="salesanalyticsmain">
+            <div class="salesanalyticsmainA">
+                <div class="salesanalytics">
+                    <p>Sales Analytics</p>
+                    <select>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                    </select>
+                </div>
+                <div class="graphsection">
+                    <div class="salestotal">
+                        Total: ₦403M
+                    </div>
+                    <div>
+                        <canvas id="myChart2"></canvas>
+                    </div>
+                    <button>Edit Data</button>
+                </div>
+            </div>
+            <div class="salesanalyticsmainB">
+                <p>Total Sales For 2020 : <strong>403 Million Naira</strong></p><br/><br/>
+                <div>
+                    <h1>Measured Income Channels</h1>
+                    <p>Website Revenue Amount In 2023 : <strong>100 Million Naira</strong></p><br/>
+                    <p>Adverts Revenue Amount In 2023 : <strong>98 Million Naira</strong></p><br/>
+                    <p><strong>Advertisements Channels/ Methods Include: </strong></p>
+                    <ol>
+                        <li>Facebook Adverts</li>
+                        <li>Influence Markeing</li>
+                        <li>Traditional Markeing</li>
+                    </ol><br/>
+                    <p>Sales Agents Generated Revenue Amount In 2023 : <strong>120 Million Naira</strong></p>
+                    <small>[Commisions Paid Out Is Less Than 45% Of Income]</small><br/><br/>
+                    <p>Web Application Revenue Amount In 2023 : <strong>85 Million Naira</strong></p><br/>
+                </div>
+            </div>
+            
+        </div>
+        {% comment %} graph 2 details on sales ends here {% endcomment %}
+    </main>
+    
+    <!-- Income and revenue GRAPH JS FILE STARTS HERE -->
+    <script>
+        const ctx = document.getElementById('myChart');
+        
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
+            datasets: [{
+                label: 'Amount In Million',
+                data: [100, 98, 120, 85, 72, 103, 100, 98, 120, 85, 72, 103],
+                borderWidth: 1,
+                backgroundColor: ['#5b7d05', '#cff908'],
+            }]
+            },
+            options: {
+            scales: {
+                y: {
+                beginAtZero: true
+                }
+            }
+            }
+        });
+    </script>
+    <!-- Income and revenue  GRAPH JS FILE ENDS HERE -->
+
+    <!-- sales analytics GRAPH JS FILE STARTS HERE -->
+    <script>
+        const ctx2 = document.getElementById('myChart2');
+        
+        new Chart(ctx2, {
+            type: 'pie',
+            data: {
+            labels: ['Website', 'Adverts', 'Sales Agents', 'Web App'],
+            datasets: [{
+                label: 'Amount In Million',
+                data: [100, 98, 120, 85],
+                borderWidth: 1,
+                backgroundColor: ['#5b7d05', '#cff908', 'darkgrey', 'grey'],
+            }]
+            },
+            options: {
+            scales: {
+                y: {
+                beginAtZero: true
+                }
+            }
+            }
+        });
+    </script>
+    <!-- sales analytics  GRAPH JS FILE ENDS HERE -->
+    <!-- FOOTER STARTS HERE -->
+       <footer>
+        <div>
+            <div>
+                <img src={% static 'dashboard/assets/adronhomesLogo.png' %} />
+            </div><br/>
+            <div class="footerintro">
+                <h3>About Adron Homes</h3>
+                <p>We Are Daily Driven To Keep Our Promise Providing Affordable Housing Products With A Singular Mission To Exceed Expectations</p>
+            </div>
+        </div>
+        <div class="fotterinner">
+            <div class="contactnote">
+                <h3>Contact Us</h3><br/>
+                <p>For complaints or enquiries, you can reach us via any of the numbers below or visit our head office</p>
+            </div>
+            <div>
+                <div class="contactadronhomes">
+                <img src={% static 'dashboard/assets/office.png' %} />
+                <p>75B Adeyemo Akapo, Omoele Phase 1. Ikeja, Lagos State</p>
+                </div>
+                <div class="contactadronhomes">
+                    <img src={% static 'dashboard/assets/call2.png' %} />
+                    <p>+234 905 8590 355</p>
+                </div>
+                <div class="contactadronhomes">
+                    <img src={% static 'dashboard/assets//mail.png' %} />
+                    <p>clientservice@adronhomespropertities.com</p>
+                </div>
+            </div>
+            
+        </div>
+        </footer>
+    <!-- FOOTER ENDS HERE -->
+</body>
+</html>
