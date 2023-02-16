@@ -20,11 +20,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = str(os.getenv('SECRET_KEY'))
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-CSRF_TRUSTED_ORIGINS = ['*', 'https://.127.0.0.1']
+# CSRF_TRUSTED_ORIGINS = ['*', 'https://.127.0.0.1']
 
 # Application definition
 
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'useronboardapp.apps.UseronboardappConfig',
     'mainapp.apps.MainappConfig',
+    'tenantApp.apps.TenantappConfig',
+    'homeownerApp.apps.HomeownerappConfig',
 ]
 
 MIDDLEWARE = [
@@ -133,6 +135,6 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Update database configuration from $DATABASE_URL.
-import dj_database_url
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
+# import dj_database_url
+# db_from_env = dj_database_url.config(conn_max_age=500)
+# DATABASES['default'].update(db_from_env)

@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(170, 170, 170, 0.19);
+}
+
+.notify{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(170, 170, 170, 0.19);
+}
+
+.notifyout{
+    width: 100%;
+}
+
+.notify h3{
+    margin-bottom: 10px ;
+}
+.herosection{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(170, 170, 170, 0.19);
+
+}
+
+.card1{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(170, 170, 170, 0.19);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.expenses{
+    display: flex;
+    align-items: center;
+    overflow: scroll;
+
+}
+
+.expensesout p{
+margin-bottom: 20px;
+margin-top: 20px;
+}
+
+.expensein{
+    margin-right: 50px;
+    margin-top: 10px;
+    text-align: center;
+
+}
+.expensein img{
+    width: 40px;
+    padding: 5px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(170, 170, 170, 0.19);
+}
+
+.subherosection{
+    display: grid;
+    grid-template-columns: 54% 40%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.utilityin img{
+    width: 40px;
+    margin-right: 20px;
+    margin-right: 20px;
+}
+.utilityin{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.utilityout{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(170, 170, 170, 0.19);
+    margin-bottom: 5px;
+    border-radius: 20px;
+    padding: 0px 5px;
+}
+
+.utilityA{
+    padding: 10px;
+}
+
+.utility{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(170, 170, 170, 0.19);
+}
+
+.livechat{
+    width: 100%;
+    height: 480px;
+    margin-bottom: 0px;
+    padding: 10px;
+    /* background-color: red; */
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(170, 170, 170, 0.19);
+}
+
+
+/* LIVE CHAT SECTION STARTS HERE */
+
+button{
+    margin: 20px 0px;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #5b7d05;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.livechatB{
+    height: 70%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.livechat img{
+    width: 70px;
+    height: 110px;
+    object-fit: cover;
+    margin-right: 5px;
+    /* border-radius: 50px; */
+}
+.livechat p{
+    margin-bottom: 20px;
+}
+
+.mainchat p{
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: grey;
+}
+
+.livechatin{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.livechatBinner input{
+    width: 80%;
+    height: 50px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #5b7d05;
+    border-radius: 10px;
+}
+
+input:focus{
+    outline: none;
+}
+/* LIVE CHAT SECTION ENDS HERE */
+
+/* FOOTER STARTS HERE */
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: grid;
+    margin-top: 20px;
+    justify-content: space-between;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.contactadronhomes img{
+    width: 30px;
+    height: 30px;
+}
+
+.contactadronhomes{
+    margin-bottom: 15px;
+}
+
+.fotterinner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contactnote{
+    width: 400px;
+    /* margin-left: 30px; */
+
+}
+
+/* FOOTER ENDS HERE */
+
+
+@media only screen and (max-width: 950px){
+    .livechat{
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+    .mainchat p{
+        width: 200px;
+        padding: 10px;
+        margin-bottom: 0px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: grey;
+    }
+
+    
+    footer{
+        background-color: black;
+        color: white;
+        padding: 20px;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 100%;
+        align-items: center;
+        text-transform: capitalize;
+    }
+
+    .footerintro{
+        margin-bottom: 20px;
+    }
+
+    .contactnote{
+        width: 400px;
+        display: none;
+        /* margin-left: 30px; */
+    
+    }
+
+    .herosection{
+        display: inline;
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .subherosection{
+        display: inline;
+        grid-template-columns: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .livechat{
+        width: 100%;
+        height: 670px;
+        margin-bottom: 30px;
+        padding: 10px;
+        /* background-color: red; */
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(170, 170, 170, 0.19);
+    }
+
+}

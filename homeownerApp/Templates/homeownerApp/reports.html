@@ -1,0 +1,109 @@
+{% include 'generalhomeowner.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/x-icon" href={% static 'dashboard/assets/adronhomesLogo.png' %}  >
+		<link rel="stylesheet" href="{% static 'homeowner/css/general.css' %}" />
+		<link rel="stylesheet" href="{% static 'homeowner/css/reports.css' %}" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Reports</title>
+
+	</head>
+    <body>
+        <main>
+            <div>
+                <p><a href ={% url 'Dashboard' %}>Dashboard</a> > Reports Page</p>
+            </div>
+
+            <div class='reportsmain'>
+                <p>All Available Reports Or Complains From Your Tenants Will Be Displayed Here</p>
+                <div class='tablemain'>
+                    <table>
+                        <tr>
+                          <th>Tenant name</th>
+                          <th>Apartment</th>
+                          <th>Complain</th>
+                          <th>Close Complain</th>
+                        </tr>
+                        <tr>
+                          <td>Alfreds Kolawole</td>
+                          <td>Block 213B</td>
+                          <td>The WC is not storing water anymore</td>
+                          <td>
+                            <button>Close Complain</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Alfreds Kolawole</td>
+                          <td>Block 213B</td>
+                          <td>The WC is not storing water anymore</td>
+                          <td>
+                            <button>Close Complain</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Alfreds Kolawole</td>
+                          <td>Block 213B</td>
+                          <td>The WC is not storing water anymore</td>
+                          <td>
+                            <button>Close Complain</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Alfreds Kolawole</td>
+                          <td>Block 213B</td>
+                          <td>The WC is not storing water anymore</td>
+                          <td>
+                            <button>Close Complain</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Alfreds Kolawole</td>
+                          <td>Block 213B</td>
+                          <td>The WC is not storing water anymore</td>
+                          <td>
+                            <button>Close Complain</button>
+                          </td>
+                        </tr>
+                      </table>
+                </div>
+            </div>
+        </main>
+           <!-- FOOTER STARTS HERE -->
+		   <footer>
+			<div>
+				<div>
+					<img src={% static 'dashboard/assets/adronhomesLogo.png' %} />
+				</div><br/>
+				<div class="footerintro">
+					<h3>About Adron Homes</h3>
+					<p>We Are Daily Driven To Keep Our Promise Providing Affordable Housing Products With A Singular Mission To Exceed Expectations</p>
+				</div>
+			</div>
+			<div class="fotterinner">
+				<div class="contactnote">
+					<h3>Contact Us</h3><br/>
+					<p>For complaints or enquiries, you can reach us via any of the numbers below or visit our head office  </p>
+				</div>
+				<div>
+					<div class="contactadronhomes">
+					<img src={% static 'dashboard/assets/office.png' %} />
+					<p>75B Adeyemo Akapo, Omoele Phase 1. Ikeja, Lagos State</p>
+					</div>
+					<div class="contactadronhomes">
+						<img src={% static 'dashboard/assets/call2.png' %} />
+						<p>+234 905 8590 355</p>
+					</div>
+					<div class="contactadronhomes">
+						<img src={% static 'dashboard/assets//mail.png' %} />
+						<p>clientservice@adronhomespropertities.com</p>
+					</div>
+				</div>
+				
+			</div>
+		</footer>
+		<!-- FOOTER ENDS HERE -->
+    </body>
+</html>

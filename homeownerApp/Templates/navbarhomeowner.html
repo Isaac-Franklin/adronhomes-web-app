@@ -1,0 +1,36 @@
+{% load static %} 
+{% block content %}
+
+<body>
+    <nav>
+        <div>
+            <img src={% static 'dashboard/assets/adronhomesLogo.png' %} />
+        </div>
+        <div>
+            <ul>
+                <a href={% url 'Dashboardhomeowner' %} ><li>Dashboard</li></a>
+                <a href={% url 'Reports' %}><li>Reports/Complaints</li></a>
+                <a href={% url 'Tenants' %}><li>Your Tenants</li></a>
+            </ul>
+        </div>
+        <div class='mobilenavitems'>
+            <div class='mobilenavtools'>
+                <img class='opennav'  src={% static 'homeowner/img/opennav.png' %} />
+                <img class='closenav' src={% static 'homeowner/img/closenav.png' %} />
+            </div>
+            <div class='mobilenavbar'>
+                <ul><br/>
+                <ul><br/>
+                    <a href={% url 'Dashboardhomeowner' %} ><li>Dashboard</li></a>
+                    <a href={% url 'Reports' %}><li>Reports/Complaints</li></a>
+                    <a href={% url 'Tenants' %}><li>Your Tenants</li></a>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+    <script src={% static 'homeowner/js/main.js' %}></script>
+</body>
+
+
+{% endblock content %}

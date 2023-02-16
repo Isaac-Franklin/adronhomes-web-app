@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: black;
+}
+
+nav img{
+    width: 100px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 20px;
+    color: white;
+    font-size: 1.1rem;
+    transition: ease-in-out 0.3s;
+}
+
+.emerg img{
+    width: 20px;
+    margin-left: 5px;
+}
+
+.emerg{
+    display: flex;
+    align-items: center;
+}
+
+nav ul a{
+    text-decoration: none;
+}
+
+nav ul li:hover{
+    color: #5b7d05;
+    cursor: pointer;
+}
+
+nav ul li p{
+    color: red;
+}
+
+.mobilenavtools{
+    display: none;
+}
+
+.mobilenavbar ul{
+    display: none;
+}
+
+.mobilenavitems{
+    display: none;
+}
+
+
+/* registerdeviceformmodal STARTS HERE */
+
+.RegisterDevice{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 30px;
+}
+
+
+.registerdeviceformmodal{
+    /* height: 50%; */
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    /* background-color: #9c9c9c; */
+    box-shadow: 1px 1px 10px #888888;
+    border-radius: 15px;
+    position: absolute;
+    text-align: center;
+    top: 40px;
+    left: 25%;
+    overflow: scroll;
+    transition: ease-in-out 1s;
+    z-index: 6;
+    display: none;
+}
+
+
+.shadow{
+    background-color: rgba(0, 0, 0, 0.452);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+    display: none;
+}
+
+.registerdeviceformmodal::-webkit-scrollbar{
+    display: none;
+}
+
+.registerdeviceformmodalShow{
+    animation: showUp 1s;
+    margin-top: 100px;
+}
+
+
+
+@keyframes showUp {
+    0% { top: -1000px; }
+    100% { top: 40px;}
+}
+.registerdeviceformmodalRemove{
+    animation: RemoveModal 1s;
+}
+
+
+
+@keyframes RemoveModal {
+    0% { top: 1000px; }
+    100% { top: -1000px;}
+}
+
+
+
+.registerdeviceformmodal input{
+    width: 80%;
+    height: 50px;
+    padding: 5px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 10px #888888;
+    color: black;
+}
+
+.registerdeviceformmodal form{
+    margin: auto;
+    margin-top: 20px;
+}
+.registerdeviceformmodal form button{
+    border: none;
+    background-color: #5b7d05;
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 1px 1px 10px #888888;
+    border-radius: 15px;
+}
+
+.closemodal button{
+    border: none;
+    background-color: #5b7d05;
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 1px 1px 10px #888888;
+    border-radius: 15px;
+}
+.closemodalforscannet button{
+    border: none;
+    background-color: #5b7d05;
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 1px 1px 10px #888888;
+    border-radius: 15px;
+}
+
+
+.shadow{
+    background-color: rgba(0, 0, 0, 0.452);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+    display: none;
+}
+.formbtns{
+    display: flex;
+    justify-content: space-around;
+}
+
+.staffformintro img{
+    width: 40px;
+}
+
+.staffformintro {
+    color: #5b7d05;
+    /* display: flex;
+    width: 50%;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center; */
+}
+/* registerdeviceformmodal ENDS HERE */
+
+
+
+@media only screen and (max-width: 950px){
+
+    .mobilenavitems{
+        display: block;
+    }
+    .mobilenavtools{
+        display: block;
+    }
+
+    .mobilenavtools img{
+        width: 50px;
+    }
+    .mobilenavbar{
+        position: fixed;
+        top: -10px;
+        right: 0px;
+        margin-top: 75px;
+        height: 50vh;
+        width: 100%;
+        text-align: right;
+        background-color: black;
+        display: none;
+        overflow: hidden;
+    }
+
+    .closenav{
+        position: absolute;
+        top: 10px;
+        z-index: 2;
+        right: 4px;
+        display: none;
+    }
+    
+    .mobilenavbar ul{
+        display: block;
+        color: white;
+        padding-right: 20px;
+
+    }
+    nav img{
+        width: 80px;
+    }
+    .mobilenavbar ul li{
+        cursor: pointer;
+        padding: 10px;
+        width: 100%;
+    }
+    .mobilenavbar ul li:hover{
+        background-color: white;
+        text-align: black;
+    }
+
+    nav ul{
+        display: none;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        z-index: 2;
+        /* position: relative; */
+    }
+
+    main{
+        margin-top: 20px;
+    }
+    
+    
+    /* registerdeviceformmodal STARTS HERE */
+    .registerdeviceformmodal{
+        height: 50%;
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+        margin-left: -10%;
+        background-color: white;
+        /* background-color: #9c9c9c; */
+        border-radius: 15px;
+        position: absolute;
+        text-align: center;
+        top: 100px;
+        left: 25%;
+        overflow: scroll;
+    }
+    /* registerdeviceformmodal ENDS HERE */
+
+}

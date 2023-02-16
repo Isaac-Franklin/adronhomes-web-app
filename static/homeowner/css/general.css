@@ -1,0 +1,514 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: tahoma;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 5px;
+    align-items: center;
+}
+
+nav img{
+    width: 80px;
+}
+
+nav ul{
+    display: flex;
+    color: white;
+    font-size: 1.2rem;
+}
+
+ul li{
+    list-style: none;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+nav ul a{
+    color: white;
+    text-decoration: none;
+}
+
+
+ul li:hover{
+    color: #cff908;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.introandcomplain{
+    background-color: white;
+    width: 100%;
+    height: 240px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(170, 170, 170, 0.19);
+}
+
+.introandcomplain .button{
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+}
+
+button{
+    margin: 20px 0px;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #5b7d05;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.introandcomplain h1{
+    margin-bottom: 20px;
+}
+
+.introandcomplain span{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.herosection{
+    display: grid;
+    grid-template-columns: 40% 45%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.herocount img{
+    width: 30px;
+    margin-right: 15px;
+}
+
+.herocountout{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.herocount{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 210px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(170, 170, 170, 0.19);
+}
+
+/* RENT SECTION STARTS HERE */
+.rentintro select{
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.rentintroout{
+    width: 100%;
+    height: 350px;
+    background-color: white;
+    margin: 0px;
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(170, 170, 170, 0.19);
+}
+
+.rentintro{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.rentinsection p{
+    margin-top: 20px;
+}
+
+
+.rentpayment{
+    display: flex;
+    justify-content: space-around;
+    background-color: #5b7d05;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    color: white;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.rentbtn{
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.reloadrent{
+    margin: 0;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.rentdueimg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.rentdueimg2{
+    margin-left: -20px;
+}
+
+.rentduetenants{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rentduetenants p{
+    margin-bottom: 10px;
+}
+
+.rentduetenantsin{
+    display: flex;
+    align-items: center;
+}
+
+.rentduetenantsin span{
+    background-color: rgba(48, 46, 46, 0.596);
+    padding: 12px;
+    border-radius: 50px;
+    margin-left: -20px;
+    color: white;
+    font-weight: bold;
+}
+
+/* RENT SECTION ENDS HERE */
+
+/* subherosection STARTS HERE */
+.subherosection{
+    display: flex;
+    background-color: white;
+    margin: 20px 0px;
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(170, 170, 170, 0.19);
+}
+
+.maintainacereqs img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.maintainacereqs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.maintainacereqsin{
+    display: flex;
+    align-items: center;
+}
+.subherosectionA{
+    width: 50%;
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(170, 170, 170, 0.19);
+}
+
+/* subherosection ENDS HERE */
+/* LIVE CHAT SECTION STARTS HERE */
+
+
+.livechat{
+    width: 50%;
+    margin-left: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(170, 170, 170, 0.19);
+
+}
+
+.livechatB{
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.livechat img{
+    width: 70px;
+    height: 110px;
+    object-fit: cover;
+    margin-right: 5px;
+    /* border-radius: 50px; */
+}
+.livechat p{
+    margin-bottom: 20px;
+}
+
+.mainchat p{
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: grey;
+}
+
+.livechatin{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.livechatBinner input{
+    width: 80%;
+    height: 50px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #5b7d05;
+    border-radius: 10px;
+}
+
+input:focus{
+    outline: none;
+}
+/* LIVE CHAT SECTION ENDS HERE */
+.mobilenavtools{
+    display: none;
+}
+
+.mobilenavbar ul{
+    display: none;
+}
+
+.mobilenavitems{
+    display: none;
+}
+
+/* FOOTER STARTS HERE */
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.contactadronhomes img{
+    width: 30px;
+    height: 30px;
+}
+
+.contactadronhomes{
+    margin-bottom: 15px;
+}
+
+.fotterinner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contactnote{
+    width: 400px;
+    /* margin-left: 30px; */
+
+}
+
+/* FOOTER ENDS HERE */
+
+@media only screen and (max-width: 950px){
+
+    .mobilenavitems{
+        display: block;
+    }
+    .mobilenavtools{
+        display: block;
+    }
+
+    .mobilenavtools img{
+        width: 50px;
+    }
+    .mobilenavbar{
+        position: fixed;
+        top: -10px;
+        right: 0px;
+        margin-top: 75px;
+        height: 50vh;
+        width: 100%;
+        text-align: right;
+        background-color: black;
+        display: none;
+        overflow: hidden;
+    }
+
+    .closenav{
+        position: absolute;
+        top: 10px;
+        z-index: 2;
+        right: 4px;
+        display: none;
+    }
+    
+    .mobilenavbar ul{
+        display: block;
+        color: white;
+        padding-right: 20px;
+
+    }
+    .mobilenavbar ul li{
+        cursor: pointer;
+        padding: 10px;
+        width: 100%;
+    }
+    .mobilenavbar ul li:hover{
+        background-color: white;
+        text-align: black;
+    }
+
+    nav ul{
+        display: none;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        z-index: 2;
+        position: relative;
+    }
+
+    main{
+        margin-top: 20px;
+    }
+
+    .herosection{
+        display: inline;
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .introandcomplain{
+        height: 300px;
+        margin: 0px;
+        width: 100%;
+        /* background-color: red; */
+    }
+
+    
+    .rentintroout{
+        margin-top: 70px;
+        height: 450px;
+        background-color: white;
+        margin: 20px;
+        margin-left: -5px;
+        padding: 20px;
+        position: relative;
+        border-radius: 10px;
+    }
+
+    .introandcomplain .button{
+        position: absolute;
+        right: 5px;
+        cursor: pointer;
+    }
+
+    .rentduetenantsin{
+        display: flex;
+        align-items: center;
+    }
+
+    .rentduetenants{
+        display: inline;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .subherosection{
+        display: inline;
+        background-color: transparent;
+        margin: 20px 0px;
+        padding: 20px;
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(170, 170, 170, 0.19);
+    }
+
+    .subherosectionA{
+        width: 100%;
+    }
+
+    .livechat{
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+    .mainchat p{
+        width: 200px;
+        padding: 10px;
+        margin-bottom: 0px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: grey;
+    }
+
+    .herocount img{
+        width: 30px;
+        margin-right: 5px;
+    }
+
+    footer{
+        background-color: black;
+        color: white;
+        padding: 20px;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 100%;
+        align-items: center;
+        text-transform: capitalize;
+    }
+
+    .footerintro{
+        margin-bottom: 20px;
+    }
+
+    .contactnote{
+        width: 400px;
+        display: none;
+        /* margin-left: 30px; */
+    
+    }
+
+
+}

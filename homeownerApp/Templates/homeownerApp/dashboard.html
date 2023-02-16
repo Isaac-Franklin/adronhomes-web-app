@@ -1,0 +1,252 @@
+{% include 'generalhomeowner.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/x-icon" href={% static 'dashboard/assets/adronhomesLogo.png' %}  >
+		<link rel="stylesheet" href="{% static 'homeowner/css/general.css' %}" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dashboard</title>
+
+	</head>
+	<body>
+		<main>
+			<div class='herosection'>
+				<div>
+					<div class='herocountout'>
+						<div class='herocount'>
+							<img src={% static 'homeowner/img/house2.png' %} />
+							<p>Apartments: 56</p>
+						</div>
+						<div class='herocount'>
+							<img src={% static 'homeowner/img/tenant2.png' %} />
+							<p>Tenants: 120</p>
+						</div>
+					</div>
+					<div class='introandcomplain'>
+						<h1>Welcome Back Tunde,</h1>
+						<p>
+							<span>Jeremy Adeyemi From Flat 21B made a complain:  </span><br/>"The tap in my bathroom seems to be leaking water, can something be done to sort this out out please?"
+						</p>
+						<div class='button'>
+							<button>Respond To This</button>
+							<button>See All Complains</button>
+						</div>
+					</div>
+				</div>
+				<div class='rentintroout'>
+					<div class='rentintro'>
+						<div>
+							<h3>Rent</h3>
+						</div>
+						<div>
+							<select>
+								<option value="Jan">Jan</option>
+								<option value="Feb.">Feb.</option>
+								<option value="March">Mar.</option>
+								<option value="April">Apr.</option>
+								<option value="May">May</option>
+								<option value="June">Jun.</option>
+								<option value="July">Jul.</option>
+								<option value="August">Aug.</option>
+								<option value="September">Sept.</option>
+								<option value="October">Oct.</option>
+								<option value="November">Nov.</option>
+								<option value="December">Dec.</option>	
+							</select>
+							<button class='reloadrent'>Reload</button>
+						</div>
+					</div>
+					<div class='rentinsection'>
+						<p>Total Rent For January: <span>₦12,000,000</span></p>
+						<div class='rentpayment'>
+							<p>Amount Paid: <strong>₦9,000,000</strong></p>
+							<p>Pending: <strong>₦3,000,000</strong></p>
+						</div>
+						<div class='rentduetenants'>
+							<div>
+								<p>Tenants with due rent:</p>
+								<div class='rentduetenantsin'>
+									<div>
+										<img class='rentdueimg ' src={% static 'dashboard/assets/man.jpg' %} />
+										<img class='rentdueimg rentdueimg2' src={% static 'dashboard/assets/man2.jpg' %} />
+										<img class='rentdueimg rentdueimg2' src={% static 'dashboard/assets/man3.jpg' %} />
+										<img class='rentdueimg rentdueimg2' src={% static 'dashboard/assets/man.jpg' %} />
+										<img class='rentdueimg rentdueimg2' src={% static 'dashboard/assets/man.jpg' %} />
+									</div>
+									<div>
+										<span>+3</span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<button>Send Reminder</button>
+							</div>
+						</div><br/>
+						<hr/>
+						<br/>
+						<button class='rentbtn'>Update Paid Tenants List</button>
+					</div>
+				</div>
+			</div>
+			<div class='subherosection'>
+				<div class='subherosectionA'>
+					<h3>Maintainance Requests</h3>
+					<p>The following tenants requested for maintainance:</p>
+					<div class='maintainacereqs'>
+						<div class='maintainacereqsin'>
+							<img src={% static 'dashboard/assets/man.jpg' %} />
+							<div>
+								<p>John Obidi</p>
+								<p>Apartment #: <strong>212A</strong></p>
+							</div>
+						</div>
+						
+						<div>
+							<button>Close Request</button>
+						</div>
+					</div>
+					<div class='maintainacereqs'>
+						<div class='maintainacereqsin'>
+							<img src={% static 'dashboard/assets/man2.jpg' %} />
+							<div>
+								<p>Jane Chidi</p>
+								<p>Apartment #: <strong>12A</strong></p>
+							</div>
+						</div>
+						<div>
+							<button>Close Request</button>
+						</div>
+					</div>
+					<div class='maintainacereqs'>
+						<div class='maintainacereqsin'>
+							<img src={% static 'dashboard/assets/man3.jpg' %} />
+							<div>
+								<p>Asiwaju Enitola</p>
+								<p>Apartment #: <strong>2C</strong></p>
+							</div>
+						</div>
+						<div>
+							<button>Close Request</button>
+						</div>
+					</div>
+					<div class='maintainacereqs'>
+						<div class='maintainacereqsin'>
+							<img src={% static 'dashboard/assets/man2.jpg' %} />
+							<div>
+								<p>J Martins</p>
+								<p>Apartment #: <strong>12B</strong></p>
+							</div>
+						</div>
+						<div>
+							<button>Close Request</button>
+						</div>
+					</div>
+					<div class='maintainacereqs'>
+						<div class='maintainacereqsin'>
+							<img src={% static 'dashboard/assets/man.jpg' %} />
+							<div>
+								<p>John Obidi</p>
+								<p>Apartment #: <strong>212A</strong></p>
+							</div>
+						</div>
+						<div>
+							<button>Close Request</button>
+						</div>
+					</div>
+				</div>
+				<div class='livechat'>
+					<div class='livechatB'>
+							<h3>Live Chat</h3>
+						<p>Real Time Conversation Between Your Tenants</p>
+						<div class='livechatin'>
+							<img src={% static 'dashboard/assets/man.jpg' %} />
+							<div class='mainchat'>
+								<h4>John Obidi said:</h4>
+								<p>I had mentioned this same fault sometime last week, nothing was done about it since then!</p>
+								<small>32 minutes ago</small>
+								
+							</div>
+						</div>
+						<div class='livechatin'>
+							<img src={% static 'dashboard/assets/man.jpg' %} />
+							<div class='mainchat'>
+								<h4>John Obidi said:</h4>
+								<p>I had mentioned this same fault sometime last week, nothing was done about it since then!</p>
+								<small>32 minutes ago</small>
+								
+							</div>
+						</div>
+						<div class='livechatin'>
+							<img src={% static 'dashboard/assets/man.jpg' %} />
+							<div class='mainchat'>
+								<h4>John Obidi said:</h4>
+								<p>I had mentioned this same fault sometime last week, nothing was done about it since then!</p>
+								<small>32 minutes ago</small>
+								
+							</div>
+						</div>
+						<div class='livechatin'>
+							<img src={% static 'dashboard/assets/man.jpg' %} />
+							<div class='mainchat'>
+								<h4>John Obidi said:</h4>
+								<p>I had mentioned this same fault sometime last week, nothing was done about it since then!</p>
+								<small>32 minutes ago</small>
+								
+							</div>
+						</div>
+						<div class='livechatin'>
+							<img src={% static 'dashboard/assets/man.jpg' %} />
+							<div class='mainchat'>
+								<h4>John Obidi said:</h4>
+								<p>I had mentioned this same fault sometime last week, nothing was done about it since then!</p>
+								<small>32 minutes ago</small>
+								
+							</div>
+						</div>
+					</div>
+					<div class='livechatBinner'>
+						<input type="text" placeholder="Chat..." />
+						<button>Send</button>
+					</div>
+				</div>
+			</div>
+		</main>
+		   <!-- FOOTER STARTS HERE -->
+		   <footer>
+			<div>
+				<div>
+					<img src={% static 'dashboard/assets/adronhomesLogo.png' %} />
+				</div><br/>
+				<div class="footerintro">
+					<h3>About Adron Homes</h3>
+					<p>We Are Daily Driven To Keep Our Promise Providing Affordable Housing Products With A Singular Mission To Exceed Expectations</p>
+				</div>
+			</div>
+			<div class="fotterinner">
+				<div class="contactnote">
+					<h3>Contact Us</h3><br/>
+					<p>For complaints or enquiries, you can reach us via any of the numbers below or visit our head office  </p>
+				</div>
+				<div>
+					<div class="contactadronhomes">
+					<img src={% static 'dashboard/assets/office.png' %} />
+					<p>75B Adeyemo Akapo, Omoele Phase 1. Ikeja, Lagos State</p>
+					</div>
+					<div class="contactadronhomes">
+						<img src={% static 'dashboard/assets/call2.png' %} />
+						<p>+234 905 8590 355</p>
+					</div>
+					<div class="contactadronhomes">
+						<img src={% static 'dashboard/assets//mail.png' %} />
+						<p>clientservice@adronhomespropertities.com</p>
+					</div>
+				</div>
+				
+			</div>
+		</footer>
+		<!-- FOOTER ENDS HERE -->
+		<script src={% static 'homeowner/js/main.js' %}></script>
+    </body>
+</html>

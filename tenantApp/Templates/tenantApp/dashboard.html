@@ -1,0 +1,221 @@
+{% include 'generaltenant.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/x-icon" href={% static 'dashboard/assets/adronhomesLogo.png' %}  >
+		<link rel="stylesheet" href="{% static 'tenant/css/dashboard.css' %}" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <title>Dashboard - Tenent</title>
+	</head>
+	<body>
+        <main>
+            <div>
+                <h1><i>Welcome Back,</i> Adeyemi.</h1>
+                <div class='herosection'>
+                    <div class='notifyout'>
+                        <div class='notify'>
+                            <h3>Quick Notification From LandLord</h3>
+                            <p>Please kindly note that there will be a compulsory clean up exercise on Monday, 25-03-2023. 
+                                Faliure to be presend and you attract a fine of 10,000 naira.</p>
+                        </div>
+                        <div class='card1'>
+                            <h3>Current Rent Cost/Year: ₦495, 000</h3>
+                            <p>Apartment Number: <strong>97B</strong></p>
+                        </div>
+                    </div>
+                   
+                    <div class='card'>
+                        <div class='expensesout'>
+                            <h3>Active Apartment Amenities</h3>
+                            <div class='expenses'>
+                                <div class='expensein'>
+                                    <img src={% static 'homeowner/img/gas.png' %} />
+                                    <p>Gas</p>
+                                </div>
+                                <div class='expensein'>
+                                    <img src={% static 'homeowner/img/electricy.png' %} />
+                                    <p>Electricity</p>
+                                </div>
+                                <div class='expensein'>
+                                    <img src={% static 'homeowner/img/water.png' %} />
+                                    <p>Water</p>
+                                </div>
+                                <div class='expensein'>
+                                    <img src={% static 'homeowner/img/rent.png' %} />
+                                    <p>Health</p>
+                                </div>
+                                <div class='expensein'>
+                                    <img src={% static 'homeowner/img/wifi.png' %} />
+                                    <p>Wifi</p>
+                                </div>
+                                <div class='expensein'>
+                                    <img src={% static 'homeowner/img/service.png' %} />
+                                    <p>Services</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% comment %} UTILITIES SECTION STARTS HERE {% endcomment %}
+            <div class='subherosection'>
+                <div class='utility'>
+                    <div class='utilityA'>
+                        <h3>Utilities</h3>
+                        <div class='utilitiesinner'>
+                            <div class='utilityout'>
+                                <div class='utilityin'>
+                                    <img src={% static 'homeowner/img/gas.png' %} />
+                                    <p>Gas</p>
+                                </div>
+                                <div>
+                                    <p><strong>₦23,000/Month</strong></p>
+                                </div>
+                            </div>
+                            <div class='utilityout'>
+                                <div class='utilityin'>
+                                    <img src={% static 'homeowner/img/electricy.png' %} />
+                                <p>Electricity</p>
+                                </div>
+                                <div>
+                                    <p><strong>₦83,000/Month</strong></p>
+                                </div>
+                            </div>
+                            <div class='utilityout'>
+                                <div class='utilityin'>
+                                    <img src={% static 'homeowner/img/water.png' %} />
+                                    <p>Water</p>
+                                </div>
+                                <div>
+                                    <p><strong>₦43,000/Month</strong></p>
+                                </div>
+                            </div>
+                            <div class='utilityout'>
+                                <div class='utilityin'>
+                                    <img src={% static 'homeowner/img/rent.png' %} />
+                                    <p>Health</p>
+                                </div>
+                                <div>
+                                    <p><strong>₦23,000/Month</strong></p>
+                                </div>
+                            </div>
+                            <div class='utilityout'>
+                                <div class='utilityin'>
+                                    <img src={% static 'homeowner/img/wifi.png' %} />
+                                    <p>Wifi</p>
+                                </div>
+                                <div>
+                                    <p><strong>₦15,000/Month</strong></p>
+                                </div>
+                            </div>
+                            <div class='utilityout'>
+                                <div class='utilityin'>
+                                    <img src={% static 'homeowner/img/service.png' %} />
+                                    <p>Services</p>
+                                </div>
+                                <div>
+                                    <p><strong>₦10,000/Month</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='livechat'>
+                    <h3>Live Chat</h3>
+                    <p>Real Time Conversation Between Your Tenants</p>
+                    <div class='livechat'>
+                        <div class='livechatB'>
+                            <div class='livechatin'>
+                                <img src={% static 'dashboard/assets/man.jpg' %} />
+                                <div class='mainchat'>
+                                    <h4>John Obidi said:</h4>
+                                    <p>I had mentioned this same fault sometime last week, nothing was done about it since then!</p>
+                                    <small>32 minutes ago</small>
+                                    
+                                </div>
+                            </div>
+                            <div class='livechatin'>
+                                <img src={% static 'dashboard/assets/man.jpg' %} />
+                                <div class='mainchat'>
+                                    <h4>John Obidi said:</h4>
+                                    <p>I had mentioned this same fault sometime last week, nothing was done about it since then!</p>
+                                    <small>32 minutes ago</small>
+                                    
+                                </div>
+                            </div>
+                            <div class='livechatin'>
+                                <img src={% static 'dashboard/assets/man.jpg' %} />
+                                <div class='mainchat'>
+                                    <h4>John Obidi said:</h4>
+                                    <p>I had mentioned this same fault sometime last week, nothing was done about it since then!</p>
+                                    <small>32 minutes ago</small>
+                                    
+                                </div>
+                            </div>
+                            <div class='livechatin'>
+                                <img src={% static 'dashboard/assets/man.jpg' %} />
+                                <div class='mainchat'>
+                                    <h4>John Obidi said:</h4>
+                                    <p>I had mentioned this same fault sometime last week, nothing was done about it since then!</p>
+                                    <small>32 minutes ago</small>
+                                    
+                                </div>
+                            </div>
+                            <div class='livechatin'>
+                                <img src={% static 'dashboard/assets/man.jpg' %} />
+                                <div class='mainchat'>
+                                    <h4>John Obidi said:</h4>
+                                    <p>I had mentioned this same fault sometime last week, nothing was done about it since then!</p>
+                                    <small>32 minutes ago</small>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class='livechatBinner'>
+                            <input type="text" placeholder="Chat..." />
+                            <button>Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% comment %} UTILITIES SECTION ENDS HERE {% endcomment %}
+        </main>
+         <!-- FOOTER STARTS HERE -->
+		<footer>
+			<div>
+				<div>
+					<img src={% static 'dashboard/assets/adronhomesLogo.png' %} />
+				</div><br/>
+				<div class="footerintro">
+					<h3>About Adron Homes</h3>
+					<p>We Are Daily Driven To Keep Our Promise Providing Affordable Housing Products With A Singular Mission To Exceed Expectations</p>
+				</div>
+			</div>
+			<div class="fotterinner">
+				<div class="contactnote">
+					<h3>Contact Us</h3><br/>
+					<p>For complaints or enquiries, you can reach us via any of the numbers below or visit our head office  </p>
+				</div>
+				<div>
+					<div class="contactadronhomes">
+					<img src={% static 'dashboard/assets/office.png' %} />
+					<p>75B Adeyemo Akapo, Omoele Phase 1. Ikeja, Lagos State</p>
+					</div>
+					<div class="contactadronhomes">
+						<img src={% static 'dashboard/assets/call2.png' %} />
+						<p>+234 905 8590 355</p>
+					</div>
+					<div class="contactadronhomes">
+						<img src={% static 'dashboard/assets//mail.png' %} />
+						<p>clientservice@adronhomespropertities.com</p>
+					</div>
+				</div>
+				
+			</div>
+		</footer>
+    </body>
+</html>

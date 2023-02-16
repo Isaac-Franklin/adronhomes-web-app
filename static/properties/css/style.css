@@ -86,7 +86,9 @@ main h3 a{
 
 .propertiesdatasectionmainimginner img{
     width: 100px;
-    cursor: pointer;
+    width: 100px;
+    height: pointer;
+    overflow: hidden;
     margin-right: 5px;
 }
 
@@ -205,6 +207,7 @@ main h3 a{
     
     .propertiesdatasectionmainimginner img{
         width: 80px;
+        height: 80px;
         cursor: pointer;
         margin-right: 5px;
     }

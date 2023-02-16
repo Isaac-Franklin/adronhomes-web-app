@@ -1,0 +1,69 @@
+{% load static %} 
+{% block content %}
+<body>
+    <div class='shadow'></div>
+    <div>
+        <nav>
+            <img src={% static 'dashboard/assets/adronhomesLogo.png' %} />
+            <ul><br/>
+                <a href={% url 'Dashboard' %} ><li>Dashboard</li></a>
+                {% comment %} <a href={% url 'Reports' %}><li>Utilities</li></a> {% endcomment %}
+                <li  class='registerstaff'>Make A Report</li>
+                <li>
+                    <div class='emerg'>
+                        <p>EMERGENCY CONTACT</p>
+                        <img src={% static 'tenant/img/whatsapp2.png' %} />
+                    </div>
+                </li>
+            </ul>
+            <div class='mobilenavitems'>
+                <div class='mobilenavtools'>
+                    <img class='opennav'  src={% static 'homeowner/img/opennav.png' %} />
+                    <img class='closenav' src={% static 'homeowner/img/closenav.png' %} />
+                </div>
+                <div class='mobilenavbar'>
+                    <ul><br/>
+                        <a href={% url 'Dashboard' %} ><li>Dashboard</li></a>
+                        {% comment %} <a href={% url 'Reports' %}><li>Utilities</li></a> {% endcomment %}
+                        <li  class='registerstaff2'>Make A Report</li>
+                        <li>
+                            <div class='emerg'>
+                                <p>EMERGENCY CONTACT</p>
+                                <img src={% static 'tenant/img/whatsapp2.png' %} />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+        
+		<!-- FOOTER ENDS HERE -->
+        {% comment %} REGISTER A DEVICE MODAL STARTS HERE {% endcomment %}
+        <div class='registerdeviceformmodal'>
+            <div class='staffformintro'>
+                <ph3>Make Your Complain</ph3>
+            </div>
+            <div>
+                <form>
+                    <div>
+                         <div>
+                            <input type='text' placeholder='Title'/><br/><br/>
+                        </div>
+                        <div>
+                            <input type='text' placeholder='Enter Your Complain'/><br/><br/>
+                        </div>
+                    </div>
+                    <div class='formbtns'>
+                        <button><p>Submit</p></button>
+                    </div>
+                </form>
+                <div class='closemodal'>
+                    <button><p>Close</p></button>
+                </div>
+                
+            </div>
+        </div>
+        {% comment %} REGISTER A STAFF MODAL ENDS HERE {% endcomment %}
+
+</body>
+
+{% endblock content %}

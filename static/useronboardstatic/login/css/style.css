@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: tahoma;
+}
+
+.main{
+    background-color: black;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 60% 35%;
+    width: 100vw;
+    align-items: center;
+}
+
+.sideimg{
+    overflow: hidden;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.sideimg img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: top;
+    overflow: hidden;
+    animation: breath 10s linear infinite;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+
+@keyframes breath {
+    0% { transform: scale(1.5, 1.5) }
+    50% { transform: scale(1, 1) }
+    100% { transform: scale(1.5, 1.5) }
+}
+
+
+form input{
+    background-color: white;
+    width: 400px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+
+form label{
+    margin-bottom: 10px;
+    margin-top: 30px;
+    color: white;
+}
+
+form button{
+    background-color: white;
+    color: black;
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    margin-bottom: 20px;
+}
+
+form h3{
+    margin-bottom: 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.loginassection blockquote{
+    width: 300px;
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.loginassection button{
+    background-color: #cff908;
+    border: none;
+    color: black;
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+
+
+
+/* HOME OWNER MODAL STARTS HERE */
+.homeownerssection{
+    display: none;
+}
+.tenantssection{
+    display: none;
+}
+.homeownermodal{
+    background-color: black;
+    /* background-color: rgb(116, 116, 116); */
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.homeownermodal h3{
+    color: white;
+}
+
+.homeownermodalinner{
+    display: grid;
+    grid-template-columns: 50% 40%;
+    /* height: 70vh; */
+    overflow-y: hidden;
+}
+
+.homeownermodal img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: top;
+}
+
+.homeownermodalform{
+    margin-left: 30px;
+    margin-top: 30px;
+    /* overflow: scroll; */
+}
+/* HOME OWNER MODAL ENDS HERE */
+
+
+@media only screen and (max-width: 950px){
+    .main{
+        background-color: black;
+        justify-content: space-between;
+        display: inline;
+        grid-template-columns: 100%;
+        width: 100vw;
+        align-items: center;
+    }
+
+    .loginassection blockquote{
+        width: 300px;
+        font-size: 1.3rem;
+        margin-bottom: 40px;
+        color: white;
+    }
+
+    main{
+        height: 100vh;
+        background-color: black;
+    }
+
+    .sideimg{
+        /* overflow: hidden; */
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 1px;
+    }
+
+    .sideimg img{
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+        object-position: top;
+        overflow: hidden;
+        animation: breathno 10s linear infinite;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 1px;
+    }
+
+    .logo1 {
+        display: none;
+    }
+
+    .loginassection{
+        padding: 20px;
+        background-color: black;
+    }
+
+    
+    .loginassection button{
+        background-color: #cff908;
+        font-size: 1.2rem;
+        border: none;
+        color: black;
+        padding: 5px 20px;
+        border-radius: 10px;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    /* HOME OWNERS MODAL STARTS HERE */
+    .homeownermodalinner{
+        display: inline;
+        grid-template-columns: 100%;
+        height: 70vh;
+        /* overflow-y: hidden; */
+    }
+    
+    .homeownermodal img{
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+        object-position: top;
+    }
+    
+    .homeownermodalform{
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    /* HOME OWNERS MODAL ENDS HERE */
+    
+    .logo{
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        margin-top: 0px;
+        text-align: center;
+    }
+    
+    form input{
+        background-color: white;
+        width: 300px;
+        height: 50px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        color: black;
+
+    }
+
+    
+    form label{
+        margin-bottom: 30px;
+        margin-top: 30px;
+        color: white;
+    }
+
+    
+}

@@ -1,3 +1,4 @@
+
 //   OPEN AND CLOSE SIDE BAR ON MOBILE DEVICE
 let closeNav = document.querySelector('.navclose')
 let openNav = document.querySelector('.navopen')
@@ -18,3 +19,4 @@ closeNav.addEventListener('click', () => {
     useraccesssection.style.opacity = '0'
     listmenu.style.display = 'none'
 })
+
