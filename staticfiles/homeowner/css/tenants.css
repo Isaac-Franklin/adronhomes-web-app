@@ -1,0 +1,36 @@
+main a{
+    color: #5b7d05;
+    text-decoration: none;
+}
+
+.reportsmain{
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(170, 170, 170, 0.19);
+}
+
+.reportsmain p{
+    margin-bottom: 20px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .tablemain{
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
