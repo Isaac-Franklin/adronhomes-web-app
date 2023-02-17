@@ -136,7 +136,8 @@ nav ul li p{
     width: 80%;
     height: 50px;
     padding: 5px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    padding: 10px;
     border-radius: 10px;
     border: none;
     box-shadow: 1px 1px 10px #888888;
@@ -197,6 +198,18 @@ nav ul li p{
     justify-content: space-around;
 }
 
+textarea{
+    width: 80%;
+    height: 150px;
+    padding: 5px;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 10px #888888;
+    color: black;
+}
+
 .staffformintro img{
     width: 40px;
 }
@@ -210,6 +223,8 @@ nav ul li p{
     align-items: center; */
 }
 /* registerdeviceformmodal ENDS HERE */
+
+
 
 
 

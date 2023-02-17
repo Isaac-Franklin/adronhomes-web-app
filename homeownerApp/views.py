@@ -9,7 +9,7 @@ def Dashboardhomeowner(request):
     return render(request, 'homeownerApp/dashboard.html')
 
 
-def Reports(request):
+def ReportsAdmin(request):
     return render(request, 'homeownerApp/reports.html')
 
 
